@@ -1,0 +1,238 @@
+
+Exercicio 1:
+
+void main() {
+
+  print(numeros(10,2));
+  
+}
+
+int numeros(int n1, int n2){
+  
+  if(n1 < n2){
+    return n1;
+  }
+  
+  else {
+    
+    return n2;
+    
+  }
+}
+
+
+Exercicio 2:
+
+
+void main(){
+  calcSoma(19);
+}
+
+void calcSoma(int a){ 
+  int count = 0;
+  for(int i = 0; i<=a; i++){
+    if (a % i == 0) {
+       count++;
+     }
+   }
+    if (count == 2){
+      print("True");
+    }
+    else{
+      print("False");
+    }
+      
+}
+
+
+
+Exercicio 3:
+
+
+void main() { 
+  test(10);
+}
+
+void test(int n1){
+  bool a = true;
+  if(n1 < 0){
+    a = false;
+  }
+  print(a);
+}
+
+
+
+
+Exercicio 4:
+
+void main() { 
+  media(2, 3, 10);
+}
+
+void media(int n1, int n2, int n3){
+  
+  double med = (n1+n2+n3)/3;
+
+  print(med);
+}
+
+
+
+
+Exercicio 5:
+
+
+void main() { 
+  soma(2, 3);
+}
+
+void soma(int n1, int n2){
+ 
+  int total = n1+n2;
+   if(total > 0){
+      print(total);
+   }
+  else{
+    print("passou algum numero negativo");
+  }
+}
+
+
+
+Exercicio 6:
+
+int a = 0;
+
+void main() { 
+  idade(8);
+  resultado(a);
+}
+
+int idade(int n1){
+    
+   if(n1 >= 5 && n1 <= 8){
+     a = 1;
+     return (a);
+   }
+   else if(n1 >= 8 && n1 <= 10){
+     a = 2;
+     return (a);
+   }
+   else if(n1 >= 11 && n1 <= 13){
+     a = 3;
+     return (a);
+   }
+   else if(n1 >= 14 && n1 <= 17){
+     a = 4;
+     return (a);
+   }
+   else if(n1 >= 18){
+     a = 5;
+     return (a);
+   }
+   else{
+    print("idade inválida");
+  }
+  return 0;
+}
+
+void resultado(int a){
+   if(a == 1){
+     print("Infantil A");
+   }
+   else if(a == 2){
+     print("Infantil B");
+   }
+   else if(a == 3){
+     print("Juvenil A");
+   }
+   else if(a == 4){
+     print("Juvenil B");
+   }
+   else if(a == 5){
+     print("Adulto");
+   }
+}
+
+
+Exercicio 7:
+
+void main() { 
+  print(teste(4));
+}
+
+int teste(int n1){
+    
+   if(n1 % 2 == 0){
+     return 1;
+   }
+   else if(n1 % 2 != 0){
+     return 0;
+   }
+  return 0;
+}
+
+
+
+Exercicio 8:
+
+
+int soma(int n1, int n2) {
+  return n1 + n2;
+}
+
+int quadradoSegundo(int n1, int n2) {
+  return n1 * (n2 * n2);
+}
+
+int quadrado(int n1, int n2) {
+  return n1 * n1;
+}
+
+int triploDobro(int n1, int n2) {
+  return ((n1 + n2) * 2) * 3;
+}
+
+double metadeTriplo(int n1, int n2) {
+  int produto = ((n1 + n2) * 2) * 3;
+  return produto / 2;
+}
+
+double modulo(int n1) {
+   return n1*-1; 
+}
+
+
+void main() {
+  print(soma(20, 30));
+  print(quadradoSegundo(20, 30));
+  print(quadrado(20, 30));
+  print(triploDobro(2, 3));
+  print(metadeTriplo(2, 3));
+  print(modulo(-2));
+}
+
+
+
+
+Exercicio 9:
+
+
+void teste(int n1, int n2) {
+  if (n1 < n2) {
+    for (n1; n1 <= n2; n2--){
+      print(n2);
+    }
+  }else if(n1 > n2){
+    for (n2; n2 <= n1; n2++){
+      print(n2);
+    }
+  }else {
+    print("números iguias");
+    }
+  }
+
+void main() {
+  teste(25, 28);
+}
